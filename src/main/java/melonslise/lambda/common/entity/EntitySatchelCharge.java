@@ -36,7 +36,7 @@ public class EntitySatchelCharge extends AEntityCollidable
 	{
 		if(!this.world.isRemote)
 		{
-			this.world.createExplosion(this.owner != null ? this.owner : this, this.posX, this.posY, this.posZ, 4F, ForgeEventFactory.getMobGriefingEvent(this.world, this));
+			this.world.createExplosion(this, this.posX, this.posY, this.posZ, 6F, ForgeEventFactory.getMobGriefingEvent(this.world, this));
 			this.setDead();
 		}
 	}
