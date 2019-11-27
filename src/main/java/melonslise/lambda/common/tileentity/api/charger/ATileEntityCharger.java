@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 // TODO Base class for the nbt shit
 public abstract class ATileEntityCharger extends TileEntity implements ITileUsable
 {
-	private float charge;
+	protected float charge;
 
 	public ATileEntityCharger()
 	{

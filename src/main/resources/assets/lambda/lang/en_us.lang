@@ -1,4 +1,3 @@
-
 # Items
 
 itemGroup.lambda=Project Lambda
@@ -44,6 +43,7 @@ tile.lambda.weapon.tripmine.name=Laser Tripmine
 
 tile.lambda.charger.health.name=Medical Repair Station
 tile.lambda.charger.power.name=Charging Station
+tile.lambda.charger.universal.name=Universal Charging Station
 
 # Entities
 

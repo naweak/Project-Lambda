@@ -2,6 +2,7 @@ package melonslise.lambda.common.block;
 
 import melonslise.lambda.common.block.charger.BlockChargerHealth;
 import melonslise.lambda.common.block.charger.BlockChargerPower;
+import melonslise.lambda.common.block.charger.BlockChargerUniversal;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.event.RegistryEvent;
@@ -11,6 +12,7 @@ public class LambdaBlocks
 	public static Block
 	charger_health = new BlockChargerHealth("charger.health", Material.IRON),
 	charger_power = new BlockChargerPower("charger.power", Material.IRON),
+	charger_universal = new BlockChargerUniversal("charger.universal", Material.IRON),
 	weapon_tripmine = new BlockLaserTripmine("weapon.tripmine", Material.IRON);
 
 	private LambdaBlocks() {};
@@ -21,7 +23,8 @@ public class LambdaBlocks
 		(
 			charger_health,
 			charger_power,
-			weapon_tripmine
+			weapon_tripmine,
+			charger_universal
 		);
 	}
 }

@@ -43,6 +43,7 @@ public class LambdaItems
 
 	charger_health = new ItemBlockNamed(LambdaBlocks.charger_health),
 	charger_power = new ItemBlockNamed(LambdaBlocks.charger_power),
+	charger_universal = new ItemBlockNamed(LambdaBlocks.charger_universal),
 
 	ammo_pistol = new LambdaItem("ammo.pistol"),
 	ammo_revolver = new LambdaItem("ammo.revolver"),
@@ -96,6 +97,7 @@ public class LambdaItems
 			ammo_uranium,
 			charger_health,
 			charger_power,
+			charger_universal,
 			weapon_crowbar,
 			weapon_pistol,
 			weapon_revolver,
@@ -123,6 +125,7 @@ public class LambdaItems
 			"", "inventory",
 			charger_health,
 			charger_power,
+			charger_universal,
 			medkit,
 			battery,
 			sentry

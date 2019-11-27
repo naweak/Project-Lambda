@@ -17,6 +17,12 @@ public class CapabilityPower implements ICapabilityPower
 
 	protected EntityPlayer player;
 
+	public boolean universalCharger;
+
+	public void setUniversalCharger(boolean universalCharger) {
+		this.universalCharger = universalCharger;
+	}
+
 	private float power;
 
 	public CapabilityPower(EntityPlayer player)
@@ -28,6 +34,7 @@ public class CapabilityPower implements ICapabilityPower
 	{
 		this.player = player;
 		this.power = power;
+		this.universalCharger = false;
 	}
 
 	@Override
@@ -50,10 +57,6 @@ public class CapabilityPower implements ICapabilityPower
 		{
 			this.power = 0F;
 		}
-		else if(power > 20F)
-		{
-			this.power = 20;
-		}
 		else
 		{
 			this.power = power;
@@ -67,7 +70,7 @@ public class CapabilityPower implements ICapabilityPower
 	@Override
 	public boolean restore(float power)
 	{
-		if(this.power != 20F)
+		if(this.power != 20F || (this.power != 60F && this.universalCharger))
 		{
 			this.set(this.power + power);
 			return true;

@@ -8,6 +8,8 @@ public interface ICapabilityPower extends ICapability
 
 	public boolean set(float power);
 
+	public void setUniversalCharger(boolean universalCharger);
+
 	public boolean restore(float power);
 
 	public boolean consume(float power);
